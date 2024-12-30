@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Images/global.png">
+    <link rel="apple-touch-icon" href="/Images/global.png">
+    <title> Philosophy </title>
+</head>
+<body>
+    
+
+    <div class="page_1">
+
+
+        <nav class="navbar">
+
+
+            <ul class="nav-links">
+
+                <li><a href="/">Home</a></li>
+                <li><a href="">About</a></li>
+
+            </ul>
+
+        </nav>
+
+
+
+
+        <img src="/img/wow.jpeg">
+
+
+        <h1> φιλοσοφία </h1>
+
+        <h2> Philosophy는 고대 그리스어인 'φιλοσοφία'에서 유래했으며, 이는 "지혜를 사랑함"이라는 뜻입니다. 철학은 지혜에 대한 사랑이나
+            탐구를 의미하며, 세상과 존재, 지식, 도덕, 그리고 삶의 본질에 대한 깊은 질문과 성찰에서 시작되었습니다. 아주대학교 철학과는 이러한 
+            전통을 실천적으로 계승하며, 학생들의 자율적 학문 탐구를 존중하기 위해 자유로운 학습을 장려하고 있습니다.  </h2>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        
+        let menu_icon_box = document.querySelector(".menu_icon_box");
+        let box = document.querySelector(".box");
+
+
+
+        menu_icon_box.onclick = function() {
+            menu_icon_box.classList.toggle("active");
+            box.classList.toggle("active");
+        }
+
+        document.onclick = function(e) {
+            if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
+                menu_icon_box.classList.remove("active");
+            box.classList.remove("active");
+            }
+        }
+
+       
+
+
+
+
+    </script>
+
+
+</body>
+</html>
